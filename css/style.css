@@ -2,3 +2,55 @@
 	box-sizing:border-box;
 	-moz-box-sizing:border-box;
 }
+a {
+	text-decoration:none;
+}
+.container {
+	width:960px;
+	outline:1px solid red;
+	margin:0 auto;
+}
+header h1 {
+	margin:0;
+}
+header h1 a {
+	display:block;
+	color:#de1995;
+	background:url(img/logo.jpg) 0 0 no-repeat;
+	background-size:125px;
+	line-height:125px;
+	padding-left:135px;
+	text-decoration:none;
+}
+header nav {
+	background:#f5f5f5;
+	border-top:3px solid #ccc;
+	overflow:auto;
+}
+header nav ul {
+	margin:0;
+	padding:0;
+}
+header nav li a {
+	float:left;
+	color:#333;
+	padding:12px 15px;
+}
+header nav li a.home {
+
+}
+.content { overflow:auto; outline:1px solid black;}
+.content aside nav {
+	float:left;
+	width:30%;
+	outline:1px solid blue;
+}
+.content section {
+	float:right;
+	width:67%;
+	outline:1px solid green;
+}
+
+footer {
+	background:#de1995;
+}
