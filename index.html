@@ -40,16 +40,31 @@
 								<label for="event"><input type="radio" tabindex="2" name="type" id="event" value="Event">Event</label>
 							</div>
 							<div class="form-row">
-								<label>Title <span class="required">*</span></label>
+								<label>Title<span class="required">*</span></label>
 								<input type="text" tabindex="3" name="" class="" value="">
 							</div>
 							<div class="form-row">
 								<label>Tag</label>
 								<input type="text" tabindex="4" name="" class="" value="">
 							</div>
-							<div class="form-row">
+							<div class="form-row textarea">
 								<label>Event description</label>
-								<textarea></textarea>
+								<textarea tabindex="5" rows="6"></textarea>
+							</div>
+							<!-- We could use date and time inputs here but each browser styles them so differently we may as well streamline the experience and use something like jQuery UI to keep the UI consistent -->
+							<div class="form-row">
+								<label>From<span class="required">*</span></label>
+								<input type="text" tabindex="6" placeholder="DD/MM/YY" class="date" value="">
+								<input type="text" tabindex="7" placeholder="HH/MM" class="time" value="">
+							</div>
+							<div class="form-row">
+								<label>To<span class="required">*</span></label>
+								<input type="text" tabindex="8" placeholder="DD/MM/YY" class="date" value="">
+								<input type="text" tabindex="9" placeholder="HH/MM" class="time" value="">
+							</div>
+							<div class="form-row">
+								<a href="#" class="btn save" tabindex="10">Save</a>
+								<a href="#" class="btn preview" tabindex="11">Preview</a>
 							</div>
 						</fieldset>
 					</form>
